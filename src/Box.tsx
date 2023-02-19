@@ -1,14 +1,18 @@
 import React from "react";
-import { BsArrowUpSquareFill } from "react-icons/bs";
+import { BsArrowUpSquareFill, BsArrowDownSquareFill } from "react-icons/bs";
 
 const Box = (props: { ticker: string; price: string }) => {
   return (
-    <div className="box-content h-8 w-64 p-4 rounded-lg bg-gray-900 inline-flex">
-      <BsArrowUpSquareFill className="text-4xl" />
-      <div className="text-white text-center font-bold pl-4 text-xl">
-        {props.ticker}
+    <div className="box-content text-red-700 h-10 w-64 p-4 rounded-lg bg-gray-800 inline-flex">
+      <BsArrowDownSquareFill className="text-4xl" />{" "}
+      <div className="flex-col text-red-700">
+        <div className="text-center font-bold pl-4 text-xl">{props.ticker}</div>
+        <div className="text-center text-lg pl-4">${props.price}</div>
       </div>
-      <div className="text-center text-white">{props.price}</div>
+      <div className="flex-col pl-12">
+        <div className="text-center pl-4 text-lg">10.35%</div>
+        <div className="text-center text-lg pl-4">$10.50</div>
+      </div>
     </div>
   );
 };
