@@ -4,11 +4,11 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <div className="text-center">
-      <p className="text-white">
-        &copy; {date} Rohan Kewalramani. All rights reserved.
-      </p>
-    </div>
+    <footer className="py-4 text-center text-white fixed bottom-0 w-full">
+      <div className="container mx-auto">
+        <p>&copy; {date} My Company. All rights reserved.</p>
+      </div>
+    </footer>
   );
 };
 
