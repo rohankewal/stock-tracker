@@ -6,10 +6,10 @@ const BoxRow = () => {
     // TODO: make grid centered on the page
     <div className="flex justify-center">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <Box ticker="TSLA" price="912.32" />
-        <Box ticker="AAPL" price="912.32" />
-        <Box ticker="AMZN" price="912.32" />
-        <Box ticker="BRCC" price="912.32" />
+        <Box symbol="TSLA" />
+        <Box symbol="AAPL" />
+        <Box symbol="AMZN" />
+        <Box symbol="BRCC" />
       </div>
     </div>
   );
