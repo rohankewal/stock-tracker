@@ -33,26 +33,29 @@ const CountdownTimer = () => {
 
   return (
     <div className="text-center">
-      <h1 className="text-4xl font-bold mb-4">Stock Market Countdown Timer</h1>
       <div className="flex justify-center mb-4">
-        <div className="border border-gray-300 rounded-md p-2 mx-2">
-          <div className="text-3xl font-bold">{countdown.days}</div>
-          <div className="text-sm font-semibold">Days</div>
+        <div className="p-2 mx-2">
+          <div className="text-3xl text-white font-bold">{countdown.days}</div>
+          <div className="text-sm text-white font-semibold">Days</div>
         </div>
-        <div className="border border-gray-300 rounded-md p-2 mx-2">
-          <div className="text-3xl font-bold">{countdown.hours}</div>
-          <div className="text-sm font-semibold">Hours</div>
+        <div className="rounded-md p-2 mx-2">
+          <div className="text-3xl text-white font-bold">{countdown.hours}</div>
+          <div className="text-sm text-white font-semibold">Hours</div>
         </div>
-        <div className="border border-gray-300 rounded-md p-2 mx-2">
-          <div className="text-3xl font-bold">{countdown.minutes}</div>
-          <div className="text-sm font-semibold">Minutes</div>
+        <div className="rounded-md p-2 mx-2">
+          <div className="text-3xl text-white font-bold">
+            {countdown.minutes}
+          </div>
+          <div className="text-sm text-white font-semibold">Minutes</div>
         </div>
-        <div className="border border-gray-300 rounded-md p-2 mx-2">
-          <div className="text-3xl font-bold">{countdown.seconds}</div>
-          <div className="text-sm font-semibold">Seconds</div>
+        <div className="rounded-md p-2 mx-2">
+          <div className="text-3xl text-white font-bold">
+            {countdown.seconds}
+          </div>
+          <div className="text-sm text-white font-semibold">Seconds</div>
         </div>
       </div>
-      <div className="text-sm font-semibold text-gray-500">
+      <div className="text-sm font-semibold text-yellow-400">
         The stock market opens at 9:30am EST and closes at 4:00pm EST
       </div>
     </div>
